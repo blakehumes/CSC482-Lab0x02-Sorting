@@ -10,27 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        char[][] UnsortedArray = GenerateTestList(7,8,65,70);
-        System.out.println("Unsorted List:");
-        for(int i = 0; i < UnsortedArray.length; i++){
-          System.out.format("%s  ", String.valueOf(UnsortedArray[i]));
-
-        }
-        System.out.format("\nIs the array sorted: %d\n", IsSorted(UnsortedArray));
-        System.out.println("Radix Sort (D2):");
-        //char[][] SortedArray = SelectionSort(UnsortedArray);
-        //char[][] SortedArray = MergeSort(UnsortedArray);
-        //QuickSortClass qs = new QuickSortClass(UnsortedArray);
-        //char[][] SortedArray = qs.QuickSort(0,UnsortedArray.length - 1);
-        char[][] SortedArray = RadixSort(UnsortedArray, 2);
-        for(int i = 0; i < SortedArray.length; i++){
-          System.out.format("%s  ", String.valueOf(SortedArray[i]));
-
-        }
-        System.out.format("\nIs the array sorted: %d\n", IsSorted(SortedArray));
 
 
-        //RunTimeTests(100000000,4);
+
+        RunTimeTests(100000000,1);
 
 
     }
